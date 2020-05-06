@@ -1,0 +1,58 @@
+import java.util.*;
+public class Tarea1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// ejercicio 1.nombre
+		Scanner scan = new Scanner(System.in);
+		System.out.println("ingrese el nombre:");
+		String Nombre=scan.next();
+		System.out.println("Su nombre es: " + Nombre);
+		
+		// ejercicio 2. Año de nacimiento  
+		System.out.println("ingrese su edad: ");
+		int edad= scan.nextInt();
+		int año= 2020-edad;
+		System.out.println("Su año de nacimiento es :" + año);
+		
+		// ejercicio 3. Area del circulo
+		System.out.println("ingrese el radio del circulo: ");
+		int radio= scan.nextInt();
+		System.out.println("El area es: " + (radio*radio)* 3.14);
+		
+		// ejercicio 4. Notas
+		System.out.println("ingrese la primera nota: ");
+		double nota1= scan.nextDouble();
+		nota1= nota1*0.2;
+		System.out.println("ingrese la segunda nota: ");
+		double nota2= scan.nextDouble();
+		nota2=nota2*0.2;
+		System.out.println("ingrese la tercera nota: ");
+		double nota3= scan.nextDouble();
+		nota3=nota3*0.3;
+		System.out.println("ingrese la cuarta nota: ");
+		double nota4= scan.nextDouble();
+		nota4=nota4*0.3;
+		double promedio=nota1+nota2+nota3+nota4;
+		System.out.println("El promedio es: " + promedio);
+		
+		// ejercicio 5. Compra
+		System.out.println("ingrese el importe de compra: ");
+		double idescuento,descuento,compra = scan.nextDouble();
+		descuento=compra*0.05;
+		idescuento= compra-descuento;
+		System.out.println("el importe del descuento es: " + idescuento + "total a pagar");
+		
+		//ejercicio 6. Hombres y mujeres
+		System.out.println("ingrese la cantidad de hombres: ");
+		int hombres=scan.nextInt();
+		System.out.println("ingrese la cantidad de mujeres: ");
+		int mujeres=scan.nextInt();
+		int total=hombres + mujeres;		
+		double phombre=hombres*100/total;
+		System.out.println("el porncentaje de hombres es: " + phombre + "%");
+		double pmujeres=mujeres*100/total;
+		System.out.println("el porsentaje de mujeres es: " + pmujeres + "%");
+	}
+
+}
